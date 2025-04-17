@@ -74,7 +74,7 @@ for (let property in vibePalette) {
 
   switch (property) {
     case "mood":
-      vibeOutput.push(`🎧🎶 Today's vibe is ${vibePalette[property][randomIndex]}`);
+      vibeOutput.push(`🎧 Today's vibe is ${vibePalette[property][randomIndex]}`);
       break;
     case "genre":
       vibeOutput.push(vibePalette[property][randomIndex]);
@@ -87,6 +87,28 @@ for (let property in vibePalette) {
       break;
   }
 }
+
+// ASCII Art 
+const asciiArt = `
+  🎵🎶 SONG MOOD GENERATOR 🎶🎵
+   
+       ;;;;;;;;;;;;;;;;;;; 
+     ;;;;;;;;;;;;;;;;;;;
+     ;                 ;
+     ;                 ;
+     ;                 ;
+     ;                 ;
+     ;                 ;        ♫⋆｡♪ ₊˚♬ ﾟ.
+     ;                 ;    What's your vibe? 
+     ;                 ;       ¯\\_(ツ)_/¯
+,;;;;;            ,;;;;;
+
+;;;;;;            ;;;;;;
+\`;;;;'            \`;;;;'
+    
+`;
+
+console.log(asciiArt);
 
 // Join the generated vibe components into a single string
 console.log((vibeOutput = vibeOutput.join(" ")));
